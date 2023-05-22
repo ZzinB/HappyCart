@@ -22,14 +22,20 @@
         </nav>
         <div class="content" id="map">
             
-        </div>
-        <nav class="bottom-menu nav nav-pills nav-justified">
-            <a class="nav-link" aria-current="page" href="#">Active</a>
-            <a class="nav-link" href="#">Much longer nav link</a>
-            <a class="nav-link active" href="#">Link</a>
-            <a class="nav-link disabled">Disabled</a>
-        </nav>
     </div>
+        <!-- <button onclick="goToPage()" class="floating-button" style="bottom: 80px;">
+            <i class="fas fa-plus"></i>
+        </button> -->
+    </div>
+    <form method="post" enctype="multipart/form-data">
+        <button onclick="addFile()" type='button' class="floating-button">
+            <!-- <b class="fas fa-plus">+</b> -->
+        <input type="file" id="chooseFile" name="chooseFile" accept="image/*" onchange="loadFile(this)">
+    </form>
+    <div class="image-show" id="image-show"></div>
+</div>
+    </div>
+    
 </body>
 
 </html>
