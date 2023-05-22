@@ -1,0 +1,31 @@
+body {
+    margin: 0; /* body 요소의 마진 제거 */
+}
+  
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* 화면 전체 높이로 설정 */
+    padding: 0 150px; /* 좌우 공백 설정 */
+    box-sizing: border-box; /* padding이 전체 크기에 포함되도록 설정 */
+}
+  
+.top-menu {
+    height: 50px; /* 원하는 높이로 설정 */
+    background-color: rgb(169, 175, 171);
+    position: sticky;
+    top: 0;
+}
+  
+.content {
+    flex: 1;
+    overflow-y: auto; /* 세로 스크롤 가능하도록 설정 */
+    padding: 20px;
+}
+  
+.bottom-menu {
+    height: 50px; /* 원하는 높이로 설정 */
+    background-color: rgb(169, 175, 171);
+    position: sticky;
+    bottom: 0;
+}
